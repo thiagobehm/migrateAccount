@@ -1,0 +1,21 @@
+{
+  "name": "migrateaa",
+  "version": "1.0.0",
+  "description": "Migrate Portal only customer to an Atlassian Account",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Thiago Behm",
+  "license": "ISC",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}

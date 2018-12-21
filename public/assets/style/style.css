@@ -1,0 +1,38 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin: 30px 0;
+    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
+}
+
+/*Align the button with the form*/
+button[type="submit"] {
+    width: 100%;
+    letter-spacing: 0.2rem;
+    border-radius: 30px;
+    box-shadow: 2px 5px 8px #949598;
+}
+
+.alert {
+    text-align: center;
+}
+
+.label {
+    position: absolute;
+    top: 24px;
+    right: 15px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 0 10px 10px 0;
+    background: #266196;
+    color: #fff;
+    letter-spacing: 5px;
+}
