@@ -2,15 +2,40 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Convert User</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Convert Portal Only customers</title>
 	<link rel="stylesheet" rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/style/style.css">
 </head>
-<body>
+<body onload="getUsersFromMemory()">
 	
+	{{> menu}}
+	<section class="row">
+		<article class="container" style="margin-top: 30px">
+			<div class="col-xs-12">
+				<div class="alert alert-warning" role="alert">
+					Are you sure you want to <strong>Migrate</strong> the following accounts to an Atlassian Account?
+					<div class="center-block" style="margin-top: 15px;">
+						
+						<button class="btn btn-warning" onclick="migrateUsers()">Migrate...</button>
+					</div>
+				</div>
+			</div>		      
+			<table class="table table-hover">
+				<thead>
+					<th>Email Address</th>
+					<th>Username</th>
+					<th>Status</th>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>			
+		</article>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
 </body>
 </html>

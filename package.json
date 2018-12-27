@@ -16,6 +16,7 @@
     "express": "^4.16.4",
     "express-paginate": "^1.0.0",
     "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
   }

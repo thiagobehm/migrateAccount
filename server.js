@@ -41,22 +41,25 @@ app.use(session({
 }));
 
 
-app.get('/migrate', urlencodedParser, (req, resp) => {
+app.post('/migrate', urlencodedParser, (req, resp) => {
+  let user = encodeURIComponent(req.body.username);
+  
+  let options = {
+    uri: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user/migrate-to-atlassian-account-user?username=${user}`,
+    method: 'PUT',
+    headers: {
+      'authorization': `Basic ${req.session.authentication}`        
+    },
+    json: true
+  }
 
-  request.put( {
-      url: `https://behmenvironment.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user/migrate-to-atlassian-account-user?username=qm%f2b45668-4bff-4866-b465-0afd335e3448:5bcb54671582cc3b70155068`,
-      headers: {
-        'authorization': `Basic dGJlaG1AYXRsYXNzaWFuLmNvbTpGS2h5d1A5QUpIMTN3Nm5JQnJHcTc2Mzk=`        
-      },
-    json: true,
-  }, (err, res, body) => {
-    // if result it's ok    
-    if (res.statusCode === 200) {
-      console.log("User migrated successfully.");
-    } else { //401 = invalid credentials
-        console.log(res.statusCode);
-    }
-  });//end or get request
+  request(options)
+    .then((data)=>{
+      resp.send(data);
+    })
+    .catch((err)=>{
+      resp.send(err);
+    });
 });
 
 app.get('/', urlencodedParser, (req, resp) => {
@@ -87,19 +90,36 @@ app.post('/authenticate', urlencodedParser, (req, resp) => {
   })//end or get request
 });
 
+//url just to render the page in case the customer access /authentication
 app.get('/authentication', urlencodedParser, (req, resp) => {
   resp.render('index.hbs');
 });
 
+//link to the page that renders the request
 app.get('/convert', urlencodedParser, (req, resp) =>{
-  resp.render('convert.hbs');
+
+  request.get( {
+    url: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user?active-filter=active&start-index=1&max-results=1000`,
+      headers: {
+        'authorization': `Basic ${req.session.authentication}`        
+      },
+      json: true,
+    }, (err, res, body) => {
+    // if result it's ok    
+    if (res.statusCode === 200) {
+      resp.render('convert.hbs');
+    } else { //401 = invalid credentials
+        resp.redirect("/authentication");
+    }
+  })//end or get request
+  
 });
 
 
 app.get('/getUsers', urlencodedParser, (req, resp, next) => {
 
   request.get( {
-      url: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user?active-filter=active&start-index=1&max-results=1000`,
+      url: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user?active-filter=active&start-index=0&max-results=1000`,
       headers: {
         'authorization': `Basic ${req.session.authentication}`        
       },

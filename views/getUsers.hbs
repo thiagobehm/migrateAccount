@@ -9,19 +9,14 @@
 	<link rel="stylesheet" rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/style/style.css">
 </head>
-<body>
+<body onload="cleanStorage()">
 	
-	<header>
-		<div class="container">
-			<ul class="nav nav-tabs nav-justified">
-			  <li role="presentation" class="active"><a href="/getUsers">Get Users</a></li>
-			  <li role="presentation"><a href="/convert">Convert to Atlassian</a></li>
-			  <li role="presentation"><a href="#">Log Out</a></li>
-			</ul>
-		</div>	
-	</header>
+	{{> menu}}
 	<section class="row">
 		<article class="container" style="margin-top: 30px">
+			<div class="pull-right">
+				<input type="checkbox" id="selectAll">  Select all
+			</div>
 			<table class="table table-hover">
 				<thead>
 					<th>Email Address</th>
@@ -33,7 +28,7 @@
 					<tr>
 						<td>{{emailAddress}}</td>
 						<td>{{username}}</td>
-						<td><input type="checkbox" value="{{emailAddress}} * {{username}}" data-email={{emailAddress}} data-username={{username}}></td>
+						<td><input type="checkbox" name='userSelect' value="{{emailAddress}} * {{username}}" data-email={{emailAddress}} data-username={{username}}></td>
 					</tr>
 					{{/each}}
 				</tbody>
@@ -59,7 +54,7 @@
 			</nav> -->
 		</article>
 	</section>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
 </body>
 </html>
