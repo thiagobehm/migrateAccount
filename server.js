@@ -40,28 +40,6 @@ app.use(session({
   }
 }));
 
-
-app.post('/migrate', urlencodedParser, (req, resp) => {
-  let user = encodeURIComponent(req.body.username);
-  
-  let options = {
-    uri: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user/migrate-to-atlassian-account-user?username=${user}`,
-    method: 'PUT',
-    headers: {
-      'authorization': `Basic ${req.session.authentication}`        
-    },
-    json: true
-  }
-  
-  request(options)
-  .then((data)=>{
-    resp.send(data);
-  })
-  .catch((err)=>{
-    resp.send(err);
-  });
-});
-
 app.get('/', urlencodedParser, (req, resp) => {
   resp.render('index.hbs');
 });
@@ -99,31 +77,19 @@ app.get('/logout', (req, resp)=>{
   })
 });
 
-//url just to render the page in case the customer access /authentication
+//url just to render the page in case the customer access or to do some redirects on the application
 app.get('/authentication', urlencodedParser, (req, resp) => {
   resp.render('index.hbs');
 });
 
 //link to the page that renders the request
 app.get('/convert', urlencodedParser, (req, resp) =>{
-  
-  request.get( {
-    url: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user?active-filter=active&start-index=1&max-results=1000`,
-    headers: {
-      'authorization': `Basic ${req.session.authentication}`        
-    },
-    json: true,
-  }, (err, res, body) => {
-    // if result it's ok    
-    if (res.statusCode === 200) {
-      resp.render('convert.hbs');
-    } else { //401 = invalid credentials
-      resp.redirect("/authentication");
-    }
-  })//end or get request
-  
+  if (req.session.authentication) {
+    resp.render('convert.hbs');
+  } else { //401 = invalid credentials
+    resp.redirect("/authentication");
+  }  
 });
-
 
 app.get('/getUsers', urlencodedParser, (req, resp, next) => {
   
@@ -137,7 +103,7 @@ app.get('/getUsers', urlencodedParser, (req, resp, next) => {
     // if result it's ok    
     if (res.statusCode === 200) {
       //const pageCount = Math.ceil(30 / req.query.limit);
-      
+  
       resp.render('getUsers.hbs', {
         users: body.localCustomers,
         //pageCount,
@@ -149,6 +115,27 @@ app.get('/getUsers', urlencodedParser, (req, resp, next) => {
       });//end of the render
     }
   });//end or get request
+});
+
+app.post('/migrate', urlencodedParser, (req, resp) => {
+  let user = encodeURIComponent(req.body.username);
+  
+  let options = {
+    uri: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user/migrate-to-atlassian-account-user?username=${user}`,
+    method: 'PUT',
+    headers: {
+      'authorization': `Basic ${req.session.authentication}`        
+    },
+    json: true
+  }
+  
+  request(options)
+  .then((data)=>{
+    resp.send(data);
+  })
+  .catch((err)=>{
+    resp.send(err);
+  });
 });
 
 //start the server
