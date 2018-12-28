@@ -93,6 +93,11 @@ app.post('/authenticate', urlencodedParser, (req, resp) => {
   }
 });
 
+app.get('/logout', (req, resp)=>{
+  req.session.destroy(()=>{
+    resp.render('index.hbs');
+  })
+});
 
 //url just to render the page in case the customer access /authentication
 app.get('/authentication', urlencodedParser, (req, resp) => {
