@@ -138,6 +138,35 @@ app.post('/migrate', urlencodedParser, (req, resp) => {
   });
 });
 
+app.get('/invite', urlencodedParser, (req, resp) => {
+
+  var bodyData = `{
+    "name": "test",
+    "password": "abracadabra",
+    "emailAddress": "testAPI@example.com",
+    "displayName": "Example API"
+    }`;
+
+
+  let options = {
+    uri: `https://${req.session.instance}.atlassian.net/rest/rest/api/3/user`,
+    method: 'POST',
+    headers: {
+      'authorization': `Basic ${req.session.authentication}`        
+    },
+    body: bodyData,
+    json: true
+  }
+  
+  request(options)
+  .then((data)=>{
+    resp.send(data);
+  })
+  .catch((err)=>{
+    resp.send(err);
+  });
+});
+
 //start the server
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
