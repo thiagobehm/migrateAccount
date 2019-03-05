@@ -149,10 +149,10 @@ app.get('/invite', urlencodedParser, (req, resp) => {
 
 
   let options = {
-    uri: `https://${req.session.instance}.atlassian.net/rest/rest/api/3/user`,
+    uri: `https://behmenvironment.atlassian.net/rest/rest/api/3/user`,
     method: 'POST',
     headers: {
-      'authorization': `Basic ${req.session.authentication}`        
+      'authorization': `Basic tbehm@atlassian.com:UFfDXKpR6jN3BHf1EfiHAB75`         
     },
     body: bodyData,
     json: true
