@@ -101,7 +101,7 @@ function migrateUsers(action) {
 					} else if (data.statusCode === 500){		
 						content = `${data.error.message}`;				
 					} else {
-						content = 'User migrated Successfully!';
+						content = 'Operation run successfully!';
 					}
 
 					status[i].innerHTML = content;					
