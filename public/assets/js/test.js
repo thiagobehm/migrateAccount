@@ -48,7 +48,7 @@ app.post('/authenticate', urlencodedParser, (req, resp) => {
   let username = req.body.username;
   let password = req.body.password;
   let action = req.body.action;
-
+  
   let authentication =  base64.encode(`${username}:${password}`);
   
   if(!req.body.instance) {
@@ -88,7 +88,7 @@ app.get('/authentication', urlencodedParser, (req, resp) => {
 app.get('/convert', urlencodedParser, (req, resp) =>{
   if (req.session.authentication) {
     resp.render('convert.hbs', {
-      action: req.session.action,
+      action: req.session.action
     });
   } else { //401 = invalid credentials
     resp.redirect("/authentication");
@@ -98,9 +98,9 @@ app.get('/convert', urlencodedParser, (req, resp) =>{
 app.get('/getUsers', urlencodedParser, (req, resp, next) => {
 
   let filter = req.session.action === 'activate' ? 'inactive' : 'active';
-  
+
   request.get( {
-    url: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user?active-filter=${filter}&start-index=0&max-results=1000`,
+    url: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user?active-filter=active&start-index=0&max-results=1000`,
     headers: {
       'authorization': `Basic ${req.session.authentication}`        
     },

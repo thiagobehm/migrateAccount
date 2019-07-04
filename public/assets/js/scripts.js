@@ -72,16 +72,25 @@ function getUsersFromMemory() {
 	}
 }
 
-function migrateUsers() {
+function migrateUsers(action) {
 	let user;
 	let status = document.querySelectorAll('.status');
 	let content;
+	let endpoint;
+
+	if (action === 'migrate') {
+		endpoint = '/migrate';
+	} else if(action === 'activate') {
+		endpoint = '/activate';
+	} else {
+		endpoint = '/deactivate'
+	}
 	
 	if(localStorage) {
 		for(let i = 0; i < localStorage.length; i++) {
 			user = JSON.parse(localStorage.getItem(localStorage.key(i)));
 
-			$.ajax('/migrate', {
+			$.ajax(endpoint, {
 				type : 'POST',
 				data: {'username' : user['username']},
 				async: true,
