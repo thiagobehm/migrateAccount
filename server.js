@@ -100,7 +100,7 @@ app.get('/getUsers', urlencodedParser, (req, resp, next) => {
   let filter = req.session.action === 'activate' ? 'inactive' : 'active';
   
   request.get( {
-    url: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user?active-filter=${filter}&start-index=0&max-results=1000`,
+    url: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user?active-filter=${filter}&start-index=0&max-results=5000`,
     headers: {
       'authorization': `Basic ${req.session.authentication}`        
     },
