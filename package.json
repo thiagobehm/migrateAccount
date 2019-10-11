@@ -13,10 +13,11 @@
     "base-64": "^0.1.0",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
+    "csv-parse": "^4.4.3",
     "express": "^4.16.4",
-    "express-paginate": "^1.0.0",
     "express-session": "^1.15.6",
     "hbs": "^4.0.1",
+    "multer": "^1.4.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
   }

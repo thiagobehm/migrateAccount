@@ -36,3 +36,8 @@ button[type="submit"] {
     color: #fff;
     letter-spacing: 5px;
 }
+
+.lead {
+    font-size: 12px;
+    border-bottom: 1px solid #e8dddd;
+}
