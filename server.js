@@ -261,6 +261,28 @@ app.post('/activate', urlencodedParser, (req, resp) => {
   });
 });
 
+app.post('/delete', urlencodedParser, (req, resp) => {
+  
+  let user = req.body.username;
+
+  let options = {
+
+    uri: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user/delete/?username=${user}`,
+    method: 'DELETE',
+    headers: {
+      'authorization': `Basic ${req.session.authentication}`    
+    }
+  }
+  
+  request(options)
+  .then((data)=>{
+    resp.send(data);
+  })
+  .catch((err)=>{
+    resp.send(err);
+  });
+});
+
 //start the server
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);

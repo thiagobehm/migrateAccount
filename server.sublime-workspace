@@ -1,0 +1,788 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ema",
+				"emailColumnFound"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"read",
+				"read_csv"
+			],
+			[
+				"cs",
+				"csv_file"
+			],
+			[
+				"fo",
+				"found"
+			],
+			[
+				"r",
+				"request_method"
+			],
+			[
+				"coo",
+				"cookie"
+			],
+			[
+				"cooki",
+				"cookieSession"
+			],
+			[
+				"loca",
+				"localstorage"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"get",
+				"getItem"
+			],
+			[
+				"ch",
+				"checkboxes"
+			],
+			[
+				"re",
+				"really"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"blo",
+				"blocked"
+			],
+			[
+				"al",
+				"allUsers"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"bloc",
+				"blocked"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"data",
+				"data-id"
+			],
+			[
+				"h",
+				"haltUsers"
+			],
+			[
+				"p",
+				"push"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"blocke",
+				"blockedUsers"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"csv",
+				"csvUsers"
+			],
+			[
+				"temp",
+				"tempActive"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"form",
+				"form-group"
+			],
+			[
+				"req",
+				"req"
+			],
+			[
+				"cloud",
+				"cloudID"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"appe",
+				"appendChild"
+			],
+			[
+				"e",
+				"elements"
+			],
+			[
+				"duo",
+				"duo_iframe"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"conver",
+				"convertUsers"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"td",
+				"td3"
+			],
+			[
+				"sele",
+				"selecionar"
+			],
+			[
+				"che",
+				"CHECKBOXESLIMIT"
+			],
+			[
+				"conta",
+				"contador"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"inn",
+				"innerHTML"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"sor",
+				"sortFinalResult"
+			],
+			[
+				"a",
+				"array"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"num",
+				"numbers"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"contai",
+				"containter"
+			],
+			[
+				"ali",
+				"align-content"
+			],
+			[
+				"fle",
+				"flex-start"
+			],
+			[
+				"chec",
+				"checkboxes"
+			],
+			[
+				"se",
+				"selectAll"
+			],
+			[
+				"check",
+				"checked"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"au",
+				"authenticate"
+			],
+			[
+				"cur",
+				"cur-ha\tcursor: hand;"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"requ",
+				"require"
+			],
+			[
+				"urle",
+				"urlencodedParser"
+			],
+			[
+				"end",
+				"endDate"
+			],
+			[
+				"day",
+				"dayOff"
+			],
+			[
+				"sta",
+				"start"
+			],
+			[
+				"ls",
+				"letter-spacing"
+			],
+			[
+				"star",
+				"startDate"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"trn",
+				"transition"
+			],
+			[
+				"text-de",
+				"text-decoration-line"
+			],
+			[
+				"sp",
+				"space-between"
+			],
+			[
+				"rever",
+				"row-reverse"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"go",
+				"goalData"
+			],
+			[
+				"goa",
+				"goalData"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "rei",
+		"selected_items":
+		[
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"setjso",
+				"Set Syntax: JSON"
+			],
+			[
+				"setjs",
+				"Set Syntax: JSON"
+			],
+			[
+				"pla",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"sethtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"setjava",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"r",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"setjavas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"setHt",
+				"Set Syntax: HTML"
+			],
+			[
+				"set he",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"set htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set ht",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"setxml",
+				"Set Syntax: XML"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sethtn",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"set",
+				"Set Syntax: HTML"
+			],
+			[
+				"setpal",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"seth",
+				"Set Syntax: HTML"
+			],
+			[
+				"set java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"co",
+				"Toggle Comment"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"setpl",
+				"Set Syntax: Plain Text"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"clear",
+			"cls",
+			"ls",
+			"dir"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/thiago.behm/Desktop/mail1.txt",
+		"/Users/thiago.behm/Desktop/mail2.txt",
+		"/Users/thiago.behm/Desktop/mail3.txt",
+		"/Users/thiago.behm/Desktop/comments.csv",
+		"/Users/thiago.behm/Desktop/duplicated.csv",
+		"/Users/thiago.behm/Desktop/users.csv",
+		"/Users/thiago.behm/Desktop/mail.txt",
+		"/Users/thiago.behm/Desktop/header.txt",
+		"/Users/thiago.behm/Desktop/Tools/shipIT/um-bulk-changes/server.js",
+		"/Users/thiago.behm/Desktop/Tools/migrateAA/views/index.hbs",
+		"/Users/thiago.behm/Desktop/Tools/shipIT/um-bulk-changes/views/index.hbs",
+		"/Users/thiago.behm/Desktop/Tools/migrateAA/server.js",
+		"/Users/thiago.behm/Desktop/worked.txt",
+		"/Users/thiago.behm/Desktop/data.json",
+		"/Users/thiago.behm/Desktop/sample.json",
+		"/Users/thiago.behm/Desktop/1273.txt",
+		"/Users/thiago.behm/Desktop/notWorked.txt",
+		"/Users/thiago.behm/Desktop/1276.txt",
+		"/Users/thiago.behm/Desktop/test.sh",
+		"/Users/thiago.behm/Desktop/group2.csv",
+		"/Users/thiago.behm/Desktop/sla.sh",
+		"/Users/thiago.behm/Desktop/tickets.txt",
+		"/Users/thiago.behm/Desktop/user.sh",
+		"/Users/thiago.behm/Desktop/userlist.csv",
+		"/Users/thiago.behm/Desktop/Tools/shipIT/um-bulk-changes/public/assets/js/requestTypes.csv",
+		"/Users/thiago.behm/Desktop/orgs.csv",
+		"/Users/thiago.behm/Desktop/Tools/gsac/tickets.csv",
+		"/Users/thiago.behm/Desktop/Tools/gsac/gsacImprovements.user.js",
+		"/Users/thiago.behm/Desktop/Tools/gsac/view/style.css",
+		"/Users/thiago.behm/Desktop/Tools/webhook/jiraweb-hook/server.js",
+		"/Users/thiago.behm/Desktop/Tools/webhook/jiraweb-hook/.gitignore",
+		"/Users/thiago.behm/Desktop/Tools/gsac/script/script.js",
+		"/Users/thiago.behm/Desktop/Duplicated Users.csv",
+		"/Users/thiago.behm/Desktop/*Update August 14th*",
+		"/Users/thiago.behm/Desktop/counter.csv",
+		"/Users/thiago.behm/Desktop/gsacScript.js",
+		"/Users/thiago.behm/Desktop/msg.txt",
+		"/Users/thiago.behm/Desktop/workflow.xml",
+		"/Users/thiago.behm/Desktop/LA-12168.txt",
+		"/Users/thiago.behm/Desktop/test.txt",
+		"/Users/thiago.behm/Desktop/file@test.txt",
+		"/Users/thiago.behm/Desktop/migrateAA/views/getUsers.hbs",
+		"/Users/thiago.behm/Desktop/migrateAA/views/index.hbs",
+		"/Users/thiago.behm/Desktop/migrateAA/views/mail.txt",
+		"/Users/thiago.behm/Desktop/migrateAA/server.js",
+		"/Users/thiago.behm/Desktop/testEdu.csv",
+		"/Users/thiago.behm/Desktop/migrateAA/views/partials/menu.hbs",
+		"/Users/thiago.behm/Desktop/migrateAA/public/assets/style/style.css",
+		"/Users/thiago.behm/Desktop/missingUsers.sh",
+		"/Users/thiago.behm/Desktop/missingUsers.csv",
+		"/Users/thiago.behm/Desktop/search.html",
+		"/Users/thiago.behm/Desktop/missing.csv",
+		"/Users/thiago.behm/Desktop/importedUsers.csv",
+		"/Users/thiago.behm/Desktop/test.py",
+		"/Users/thiago.behm/Desktop/copy.xml",
+		"/Users/thiago.behm/Desktop/original.xml",
+		"/Users/thiago.behm/Desktop/migrateAA/public/assets/js/scripts.js",
+		"/Users/thiago.behm/Desktop/migrateAA/views/convert.hbs",
+		"/Users/thiago.behm/Desktop/shipIT/um-bulk-changes/views/index.hbs",
+		"/Users/thiago.behm/Desktop/manage.js",
+		"/Users/thiago.behm/Desktop/migrateAA/public/assets/js/test.js",
+		"/Users/thiago.behm/Desktop/widgetBackup.json",
+		"/Users/thiago.behm/Desktop/script.js",
+		"/Users/thiago.behm/Desktop/scripts.js",
+		"/Users/thiago.behm/Desktop/shipIT/um-bulk-changes/node_modules/express-session/session/session.js",
+		"/Users/thiago.behm/Desktop/customerMG.csv",
+		"/Users/thiago.behm/Desktop/MAIL.txt",
+		"/Users/thiago.behm/Desktop/shipIT/um-bulk-changes/server.js",
+		"/Users/thiago.behm/Desktop/shipIT/um-bulk-changes/public/assets/style/style.css",
+		"/Users/thiago.behm/Desktop/shipIT/um-bulk-changes/public/assets/js/scripts.js",
+		"/Users/thiago.behm/Desktop/shipIT/um-bulk-changes/views/action.hbs",
+		"/Users/thiago.behm/Desktop/shipIT/um-bulk-changes/views/getUsers.hbs",
+		"/Users/thiago.behm/Desktop/shipIT/um-bulk-changes/public/assets/js/test.js",
+		"/Users/thiago.behm/Desktop/shipIT/um-bulk-changes/views/partials/Duplicated Users.csv",
+		"/Users/thiago.behm/Desktop/shipIT/um-bulk-changes/views/partials/menu.hbs",
+		"/Users/thiago.behm/Desktop/media_api/media_api_attachments.py",
+		"/Users/thiago.behm/Desktop/migrateAA/getIssues.js",
+		"/Users/thiago.behm/Desktop/untitled.html",
+		"/Users/thiago.behm/Desktop/migrateAA/untitled.html",
+		"/Users/thiago.behm/Desktop/widget.html",
+		"/Users/thiago.behm/Desktop/widget2.html",
+		"/Users/thiago.behm/Desktop/message.txt",
+		"/Users/thiago.behm/Desktop/webhook/server.js",
+		"/Users/thiago.behm/Desktop/gsac/view/style.css",
+		"/Users/thiago.behm/Downloads/msg.eml",
+		"/Users/thiago.behm/Desktop/gsacUpdates.css",
+		"/Users/thiago.behm/Desktop/ADYNE-19.txt",
+		"/Users/thiago.behm/Desktop/ADYNE-18.txt",
+		"/Users/thiago.behm/Desktop/msg2.txt",
+		"/Users/thiago.behm/Desktop/Duplicated Accounts.csv",
+		"/Users/thiago.behm/Desktop/Email Address.csv",
+		"/Users/thiago.behm/Desktop/Customer Email.csv",
+		"/Users/thiago.behm/Desktop/1472.txt",
+		"/Users/thiago.behm/Desktop/CS-23134.txt",
+		"/untitled.js",
+		"/Users/thiago.behm/Desktop/new balance.csv",
+		"/Users/thiago.behm/Desktop/UmV0dXJuLVBhdGg6IDxtYXJ5LndhbmdAaG9sdHJlbmZyZXcuY2",
+		"/Users/thiago.behm/Desktop/JQL query",
+		"/Users/thiago.behm/Desktop/message_content.txt",
+		"/Users/thiago.behm/Desktop/customers.txt",
+		"/Users/thiago.behm/Desktop/megaSena/index.html",
+		"/Users/thiago.behm/Desktop/megaSena/style.css",
+		"/Users/thiago.behm/Desktop/megaSena/script.js",
+		"/Users/thiago.behm/Desktop/migrateAA/.gitignore",
+		"/Users/thiago.behm/Desktop/migrateAA/views/test.hbs",
+		"/Users/thiago.behm/Desktop/migrateAA/public/assets/style.css",
+		"/Users/thiago.behm/Desktop/519.txt",
+		"/Users/thiago.behm/Desktop/webhook/.gitignore",
+		"/Users/thiago.behm/Desktop/webhook/tools Improvements",
+		"/Users/thiago.behm/Desktop/webhook/msg.txt",
+		"/Users/thiago.behm/Desktop/test.html",
+		"/Users/thiago.behm/Desktop/TEI-215.txt",
+		"/Users/thiago.behm/Desktop/test.xml",
+		"/Users/thiago.behm/Desktop/TEI-153.txt",
+		"/Users/thiago.behm/Desktop/TEI-173.txt",
+		"/Users/thiago.behm/Desktop/TEI-175.txt",
+		"/Users/thiago.behm/Desktop/webhook/untitled.html",
+		"/Users/thiago.behm/Desktop/message2.txt",
+		"/Users/thiago.behm/Desktop/registro/server.js",
+		"/Users/thiago.behm/Desktop/webhook/mail.js",
+		"/Users/thiago.behm/Desktop/webhook/package.json",
+		"/Users/thiago.behm/Desktop/customers.csv",
+		"/Users/thiago.behm/Desktop/webhook/customers.csv",
+		"/Users/thiago.behm/Desktop/registro/public/assets/style/style.css",
+		"/Users/thiago.behm/Desktop/registro/se.js",
+		"/Users/thiago.behm/Desktop/Project_Account_Management.html",
+		"/Users/thiago.behm/Desktop/issues.csv",
+		"/Users/thiago.behm/Desktop/oneIssue.csv"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "server.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tic",
+				"gsac/tickets.csv"
+			],
+			[
+				"",
+				"As a Jira administrator I would like to restrict t"
+			],
+			[
+				"session.js",
+				"shipIT/um-bulk-changes/node_modules/express-session/session/session.js"
+			],
+			[
+				"scri",
+				"public/assets/js/scripts.js"
+			],
+			[
+				"scrp",
+				"um-bulk-changes/public/assets/js/scripts.js"
+			],
+			[
+				"scrip",
+				"migrateAA/public/assets/js/scripts.js"
+			],
+			[
+				"menu",
+				"migrateAA/views/partials/menu.hbs"
+			],
+			[
+				"scr",
+				"migrateAA/public/assets/js/scripts.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

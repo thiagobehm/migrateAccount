@@ -82,8 +82,11 @@ function migrateUsers(action) {
 		endpoint = '/migrate';
 	} else if(action === 'activate') {
 		endpoint = '/activate';
+	}
+	else if(action === 'deactivate') {
+		endpoint = '/deactivate';
 	} else {
-		endpoint = '/deactivate'
+		endpoint = '/delete'
 	}
 	
 	if(localStorage) {
