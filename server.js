@@ -156,7 +156,7 @@ app.post('/getUsers', upload.single('csv_file'), (req, resp, next) => {
 
     request.get({
       // url: `https://${instance}.atlassian.net/rest/api/2/issue/createmeta`,
-      url: `https://${instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user?active-filter=${filter}&start-index=0&max-results=500`,
+      url: `https://${instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user?active-filter=${filter}&start-index=0&max-results=1000`,
       headers: {
         'authorization': `Basic ${authentication}`        
       },
