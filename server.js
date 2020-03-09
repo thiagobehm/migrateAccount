@@ -271,13 +271,15 @@ app.post('/activate', urlencodedParser, (req, resp) => {
 app.post('/delete', urlencodedParser, (req, resp) => {
   
   let user = req.body.username;
-
+  
   let options = {
-
-    uri: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user/delete/?username=${user}`,
+    uri: `https://admin.atlassian.com/gateway/api/adminhub/customer-directory/directory/14faaa98-f013-4d28-a8f7-7d97bee6d9d9/user/${user}`,
     method: 'DELETE',
     headers: {
-      'cookie': `${req.session.cookieSession}`    
+      'cookie': `${req.session.cookieSession}`,
+      'origin': 'https://admin.atlassian.com',
+      'referer': `https://admin.atlassian.com/s/${req.session.cloudID}/jira-service-desk/portal-only-customers?filter=${user}`,
+      'sec-fetch-site': 'same-origin'
     }
   }
   
