@@ -169,9 +169,9 @@ app.post('/getUsers', upload.single('csv_file'), (req, resp, next) => {
       req.session.action = action;
 
       if (csv_file) {
-        read_csv(csv_file).then((data)=>{          
+        read_csv(csv_file).then((data)=>{       
           resp.render('getUsers.hbs', {
-            users: data,            
+            users: data         
           });
         }).catch((err)=>{
           resp.render('index.hbs', {
@@ -179,9 +179,9 @@ app.post('/getUsers', upload.single('csv_file'), (req, resp, next) => {
           })
         })
       } else {
-        console.log('it worked')
         resp.render('getUsers.hbs', {
-          users: body.localCustomers,        
+          users: body.localCustomers,
+          count: body.localCustomers.length
         });
       }      
     } else { //401 = invalid credentials       
