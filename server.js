@@ -142,7 +142,7 @@ app.post('/getUsers', upload.single('csv_file'), (req, resp, next) => {
   let cloudID = req.body['cloudID'];
   let cookieSession = req.body['token'];
   let action = req.body['action'];
-
+  let customerDirectory = req.body['customerDirectory'];
   let csv_file = req.file;
   let authentication = `cloud.session.token=${cookieSession}`;
 
@@ -167,6 +167,7 @@ app.post('/getUsers', upload.single('csv_file'), (req, resp, next) => {
       req.session.cookieSession = authentication;
       req.session.cloudID = cloudID;
       req.session.action = action;
+      req.session.customerDirectory = customerDirectory;
 
       if (csv_file) {
         read_csv(csv_file).then((data)=>{       
@@ -273,7 +274,7 @@ app.post('/delete', urlencodedParser, (req, resp) => {
   let user = req.body.username;
   
   let options = {
-    uri: `https://admin.atlassian.com/gateway/api/adminhub/customer-directory/directory/14faaa98-f013-4d28-a8f7-7d97bee6d9d9/user/${user}`,
+    uri: `https://admin.atlassian.com/gateway/api/adminhub/customer-directory/directory/${req.session.customerDirectory}/user/${user}`,
     method: 'DELETE',
     headers: {
       'cookie': `${req.session.cookieSession}`,
