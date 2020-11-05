@@ -252,14 +252,19 @@ app.post('/activate', urlencodedParser, (req, resp) => {
 
   let options = {
 
-    uri: `https://${req.session.instance}.atlassian.net/rest/servicedesk/customer-management/noeyeball/1/local-servicedesk-user/activate/?username=${user}`,
-    // uri: `https://admin.atlassian.com/gateway/api/adminhub/customer-directory/directory/9d1a867a-c37b-4f88-961b-b716cdbfaee1/user/${user}`,
-    method: 'PUT',
+    uri: `https://admin.atlassian.com/gateway/api/adminhub/customer-directory/directory/${req.session.customerDirectory}/user/${user}`,
+    method: 'PATCH',
     headers: {
-      'cookie': `${req.session.cookieSession}`    
-    }
+      'cookie': `${req.session.cookieSession}`,
+      'origin': 'https://admin.atlassian.com',
+      'sec-fetch-site': 'same-origin'  
+    },
+    body: {
+      "account_status": "active"
+    },
+    json: true
   }
-  
+
   request(options)
   .then((data)=>{
     resp.send(data);
